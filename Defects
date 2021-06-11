@@ -14,5 +14,7 @@ it can never be null.
 
 Test Result: FAIL
 
+4. Enter or pass the password as "1" in the POST call to the /hash end point. 
+
 
 
