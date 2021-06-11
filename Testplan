@@ -1,0 +1,34 @@
+Scope: The password hashing application is tested and made sure it works as per the acceptance criteria
+
+Test Cases:
+
+1. Application should answer on the port specified	Check if the application is on PORT = 8088. 
+  Open Terminal and enter sudo lsof -I -P.       
+  Look for 8088 . 
+  broken-ha application name will come up	Application should be on PORT 8088	
+  Test Result: PASS
+2.A POST to /hash should accept a password	
+  Send a POST call to /hash endpoint with password angrymonkey	
+  200 OK status message should comeup	
+  Test Result : PASS
+3.It should return a job identifier immediately	
+  Send a POST call to /hash endpoint with password angrymonkey by clicking the Send on Postman tool	
+  Job identifier should comeup immediately
+  Test result: PASS
+3 (a) The response time for the above call should be 5 s.
+  It is not always 5 sec. It is sometimes 5.01 or 5.03 s as well
+3 (b) Enter the password details as plain text or any format other than json in POST to /hash request	
+Malformed Input messages is displayed in the response which is correct		
+Test result: PASS
+4. GET to /hash/jobidentifier 	
+  send a GET request to /hash along with the job identifier	
+  Response will be 200 OK and base64 encoded password hash is returned 	
+  test result: PASS
+5.GET to /stats should be successful	
+  send a GET request to /stats. 	
+  The response should be 200 OK
+  Test result: PASS
+6.No additional password requests should be allowed when shutdown is pending. 	
+  after sending a POST/shutdown, send a GET request to /stats
+  Error Connection refused message comes up
+  test result: PASS
