@@ -14,7 +14,14 @@ it can never be null.
 
 Test Result: FAIL
 
-4. Enter or pass the password as "1" in the POST call to the /hash end point. 
+4. When the value(here value of the password) is angry monkey and the key(password) is changed, the resultant base64 encoded password should be the same
+
+for {"pwd":"angrymonkey"}, the base64 encoded password is : z4PhNX7vuL3xVChQ1m2AB9Yg5AULVxXcg/SpIdNs6c5H0NE8XYXysP+DGNKHfuwvY7kxvUdBeoGlODJ6+SfaPg==
+for {"password":"angrymonkey"}, the base64 encoded password is: NN0PAKtieayiTY8/Qd53AeMzHkbvZDdwYYiDnwtDdv/FIWvcy1sKCb7qi7Nu8Q8Cd/MqjQeyCI0pWKDGp74A1g==
+
+Test Result: FAIL
+
+
 
 
 
