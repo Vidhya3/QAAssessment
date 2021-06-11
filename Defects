@@ -21,6 +21,11 @@ for {"password":"angrymonkey"}, the base64 encoded password is: NN0PAKtieayiTY8/
 
 Test Result: FAIL
 
+5. A different key in place of password can be passed in A POST to hash endpoint. There should be some kind of validation around what is passed in the body of the POST request 
+to the /hash endpoint
+
+6. There should be some validation around the total number of characters that will be allowed for password. It accepts just 1 character("1"), special characters(+++), empty space.
+
 
 
 
