@@ -1,0 +1,18 @@
+1. "/stats end point should accept no data " as in POST method should not be allowed for /stats endpoint. 
+  However, when we send a POST call for /stats, the response is 200 OK and the requests and average time data is displayed whoch is incorrect
+
+Test result : FAIL
+
+2. When no data is entered in the json and POST call is made to the /hash endpoint, 200 OK status comes up and a job identifier also comes up as a response.
+  When there is no data entered while making a POST call,204 No Content status code can be displayed instead of 200 OK.
+  Also No job identifier should be displayed as a response
+  
+Test result: FAIL
+
+3. When we pass an empty string for password and send a POST call to /hash endpoint, 200 OK response code comes up which is incorrect. Generally, when a property is mandatory, ie. required, 
+it can never be null.
+
+Test Result: FAIL
+
+
+
