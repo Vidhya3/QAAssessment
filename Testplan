@@ -32,3 +32,6 @@ Test result: PASS
   after sending a POST/shutdown, send a GET request to /stats
   Error Connection refused message comes up
   test result: PASS
+7.GET Request to Hash Endpoint Should Return Error for a non existant job identifier
+  400 Bad Request Response Comesup and invalid syntax message comes up
+
