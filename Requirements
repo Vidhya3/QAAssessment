@@ -1,0 +1,11 @@
+The following Libraries are used:
+
+- multiprocessing
+- json
+- hashlib - library that is used to hash the messages easily. - https://docs.python.org/3/library/hashlib.html
+- base64 - base64 module is used to encode and decode data. - https://docs.python.org/3/library/base64.html
+- time
+- requests
+
+
+
