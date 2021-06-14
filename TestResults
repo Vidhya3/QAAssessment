@@ -1,0 +1,4 @@
+PASS: test_post_hash_successful
+PASS: test_get_hash_successful
+PASS: test_get_stats_successful
+PASS: test_shutdown_successful
